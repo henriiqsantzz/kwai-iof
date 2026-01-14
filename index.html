@@ -857,8 +857,12 @@
 									</label>
 								</div>
 
-								<a id="paymentButton" href="https://ambienteseguro.org.ua/c/c945adfee4" class="btn33" onclick="handlePaymentButtonClick(event); return false;" data-enabled="false">Pagar
-									Imposto</a>
+								<a id="paymentButton" 
+                                    href="SEU_LINK_DE_CHECKOUT_AQUI" 
+                                    class="btn33" 
+                                    onclick="event.preventDefault(); if(document.getElementById('termsCheckbox').checked) { window.location.href = this.href + window.location.search; } else { alert('Por favor, concorde com os termos para continuar.'); }">
+                                    Pagar Imposto
+                                </a>
 							</div>
 						</div>
 
