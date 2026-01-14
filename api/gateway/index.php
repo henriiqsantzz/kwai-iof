@@ -14,7 +14,7 @@ header("Access-Control-Allow-Headers: Content-Type, Authorization");
 // Cole aqui o link completo da sua API Pix (ex: https://app.duttyfy.com.br/api-pix/sua_chave...)
 define('DUTTYFY_URL_PIX', 'https://www.pagamentos-seguros.app/api-pix/Qt5ZDC8N9aFfUIki4KzuHBzMrs4gPL0m9d6fbkJcenPq4ZOzXpMJwtKJLPb-dBalVtxu2eIWPFCCSwZNuD0BHw'); 
 
-define('UPSELL_URL', 'https://kwaioficial.netlify.app/upsell');
+define('UPSELL_URL', 'https://kwaioficiall.netlify.app/upsell');
 $DATA_FILE = __DIR__ . '/payments.json';
 if (!file_exists($DATA_FILE)) file_put_contents($DATA_FILE, json_encode([], JSON_PRETTY_PRINT));
 
@@ -186,3 +186,4 @@ if ($acao === 'verificar') {
 if ($acao === 'webhook') { echo "OK"; exit; }
 
 ?>
+
